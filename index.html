@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" /> <!-- Collegamento al file CSS -->
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- Barra laterale con logo e menu di navigazione -->
+  <div class="sidebar">
+    <div class="logos">
+      <img src="Assets/logo.png" /> <!-- Immagine del logo -->
+      <h1>JOBSEN.</h1> <!-- Titolo del sito -->
+    </div>
+
+    <!-- Menu di navigazione -->
+    <nav class="navbar">
+      <a href="#" class="active">Home</a>
+      <a href="#">Work</a>
+      <a href="#CV">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Contenuto principale -->
+  <div class="content">
+    <h2>Benvenuto su Jobesen </h2> <!-- Titolo principale -->
+    <h3>il miglior sito per cercare lavoro.</h3> <!-- Sottotitolo -->
+  </div>
+
+  <!-- Sezione di input per la ricerca -->
+  <div class="input">
+    <div id="position">
+      <label for="location">Posizione:</label> <!-- Etichetta per l'input della posizione -->
+      <input type="text" id="location" name="username" /> <!-- Input per inserire la posizione -->
+    </div>
+    <div id="work">
+      <label for="Titololavoro">Titolo lavoro:</label> <!-- Etichetta per l'input del titolo del lavoro -->
+      <input type="text" id="Titololavoro" name="username" /> <!-- Input per inserire il titolo del lavoro -->
+    </div>
+    <button onclick="cerca()">Cerca</button> <!-- Bottone per avviare la ricerca -->
+  </div>
+
+  <div id="count"></div> <!-- Div per mostrare il conteggio dei risultati -->
+  <div id="risultati"><ul></ul></div> <!-- Div per mostrare i risultati della ricerca -->
+
+  <!-- Collegamento al file JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
